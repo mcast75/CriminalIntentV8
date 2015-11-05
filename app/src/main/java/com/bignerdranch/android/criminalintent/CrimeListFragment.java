@@ -155,11 +155,6 @@ public class CrimeListFragment extends Fragment {
             mCrimes = crimes;
         }
 
-        public void setCrimes(List<Crime> crimes) {
-            mCrimes = crimes;
-        }
-
-
         @Override
         public CrimeHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             LayoutInflater layoutInflater = LayoutInflater.from(getActivity());
@@ -177,7 +172,9 @@ public class CrimeListFragment extends Fragment {
         public int getItemCount() {
             return mCrimes.size();
         }
+
+        public void setCrimes(List<Crime> crimes) {
+            mCrimes = crimes;
+        }
     }
-
-
 }
